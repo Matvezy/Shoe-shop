@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <title>Document</title>
+  <style>
+    .row1{
+      background-color:rgba(80,0,80,0.1);;
+      height:60px;
+    }
+    .pg{
+      background-color:rgba(80,0,80,0.1);
+      height:60px;
+      z-index:50;
+    }
+    .log{
+      background-image: url('logot.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      height:60px;
+    }
+    .do{
+      background-image: url('pic.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      height:300px;
+    }
+    h1{
+      font-size: 30px;
+      font-family: 'Oswald', sans-serif;
+    }
+    .hk{
+        text-align: center;
+    }
+    .tim{
+      text-align: center;
+    }
+    .hp{
+      text-align: center;
+    }
+    #swag:hover{
+      background-color: rgba(70,0,70,0.5);
+    }
+    .hp:hover{
+      background-color: rgba(70,0,70,0.5);
+    }
+    .hk:hover{
+      background-color: rgba(70,0,70,0.5);
+    }
+    .ap:hover{
+      background-color: rgba(70,0,70,0.5);
+    }
+    a:hover{
+      font-family: 'Oswald', sans-serif;
+      text-decoration: none;
+      color:black;
+    }
+    .ap{
+      font-family: 'Oswald', sans-serif;
+      background-color:rgba(80,0,80,0.1);
+    }
+    a{
+      font-size: 30px;
+      font-family: 'Oswald', sans-serif;
+      text-decoration: none;
+      color: Black;
+    }
+    .menu ul {
+      margin: 0;
+      list-style: none;
+      padding-left: 150px;
+      display: none;
+    }
+
+    .menu .title {
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .menu.open ul {
+      display: block;
+    }
+    li{
+      font-size: 5vh;
+      font-family: 'Oswald', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row row1">
+      <div class='col-2 log'></div><div class='col-1'></div><a href="" class='col-2 hk'>О нас</a><a href="" class='col-3 hp'>Контакты</a><div class='col-4 hm menu' id="swag"><h1 class="tim">Наши товары</h1><br><ul>
+    <div class="row row2"><li><a href="shoes.html" class=' ap'>Крссовки</a></div></li>
+    <div class="row row3"><li><a href="staff.html" class=' ap'>Экипировка</a></li></div><div class="row row4"><li><a href="balls.html" class=' ap'>Мячи</a></li></div></ul></div></div>
+    <div class="row row5"><div class="col-3"></div><div class="col-6 do"></div></div>
+    <div  class="row row6"><div class="col-4"></div><div class="col-5"><h1>Лучший в мире магазин!</h1></div></div>
+    <div  class="row row7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, temporibus nemo voluptate et obcaecati ullam ipsam quaerat, cumque recusandae, impedit earum, quibusdam minus ratione quos veritatis! Cum, impedit. Reprehenderit enim dolore dolorum facilis amet ipsum nesciunt quisquam, ullam iure rem voluptatibus distinctio optio alias veniam fugiat nobis suscipit voluptates natus.</div>
+    </div>
+    <script>
+    var menuElem = document.getElementById('swag');
+    var titleElem = menuElem.querySelector('.tim');
+
+    titleElem.onclick = function() {
+      menuElem.classList.toggle('open');
+    };
+  </script>
+</body>
+</html>
